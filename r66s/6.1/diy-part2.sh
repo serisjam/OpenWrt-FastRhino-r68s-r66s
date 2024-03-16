@@ -33,6 +33,13 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lea
 
 # 添加额外软件包
 
+# DDNS.to
+git_sparse_clone main https://github.com/linkease/nas-packages-luci luci/luci-app-ddnsto
+git_sparse_clone master https://github.com/linkease/nas-packages network/services/ddnsto
+
+# iStore
+git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
+git_sparse_clone main https://github.com/linkease/istore luci
 
 # 科学上网插件
 
